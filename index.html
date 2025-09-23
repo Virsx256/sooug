@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Meta Tags للسيو -->
+  <title>سوقكم أونلاين - Sooug | سوق مفتوح للتسوق</title>
+  <meta name="description" content="سوقكم أونلاين - Sooug، منصتك المفتوحة للتسوق، بيع وشراء المنتجات بسهولة وأمان. اكتشف آلاف المنتجات مع تجربة سلسة وتصميم عصري." />
+  <meta name="keywords" content="سوقكم اونلاين, Sooug, تسوق, بيع وشراء, سوق مفتوح, تطبيق تسوق, سوقكم, سوق إلكتروني" />
+  <meta name="author" content="سوقكم أونلاين - Sooug" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="سوقكم أونلاين - Sooug" />
+  <meta property="og:description" content="منصتك المفتوحة للتسوق والبيع والشراء بسهولة وأمان. اكتشف منتجات جديدة أونلاين." />
+  <meta property="og:image" content="https://cdn.dribbble.com/users/32512/screenshots/19617936/media/0ce19da3db2bb6a2b79eac8b0381e9cf.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sooug.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- خط عربي عصري -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    body {
+      background: #f9fbfd;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      width: 100%;
+      padding: 15px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      color: #007bff;
+      font-weight: 700;
+      font-size: 22px;
+    }
+
+    header nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: 0.3s;
+      font-size: 15px;
+    }
+
+    header nav a:hover {
+      color: #007bff;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 5%;
+      min-height: 90vh;
+      background: linear-gradient(135deg, #e9f3ff, #ffffff);
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 280px;
+      animation: fadeInRight 1.5s ease forwards;
+    }
+
+    .hero-text h2 {
+      font-size: 34px;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      font-size: 17px;
+      margin-bottom: 25px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    .btn {
+      background: #007bff;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 5px 20px rgba(0,123,255,0.3);
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+      box-shadow: 0 5px 25px rgba(0,123,255,0.5);
+    }
+
+    .hero-img {
+      flex: 1;
+      min-width: 280px;
+      animation: fadeInLeft 1.5s ease forwards;
+      text-align: center;
+    }
+
+    .hero-img img {
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    section.features {
+      padding: 60px 5%;
+      text-align: center;
+    }
+
+    section.features h3 {
+      font-size: 26px;
+      margin-bottom: 40px;
+      color: #007bff;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .feature {
+      background: #fff;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    .feature h4 {
+      color: #007bff;
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    /* Animations */
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* موبايل */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-text h2 {
+        font-size: 28px;
+      }
+      .hero-text p {
+        font-size: 15px;
+      }
+      header nav {
+        display: none; /* ممكن نعمله منيو موبايل لو حابب */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>سوقكم أونلاين</h1>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#features">المميزات</a>
+      <a href="#download">تحميل التطبيق</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>مرحبًا بك في <br> سوقكم أونلاين - Sooug</h2>
+      <p>
+        منصتك المفتوحة للتسوق، بيع وشراء كل ما تحتاجه بسهولة وأمان.  
+        اكتشف منتجات جديدة وابدأ تجارتك أونلاين مع تصميم عصري وتجربة سلسة.
+      </p>
+      <a href="#download" class="btn">جرّب الآن</a>
+    </div>
+    <div class="hero-img">
+      <img src="sooug.png" alt="Sooug App">
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h3>مميزات سوقكم أونلاين</h3>
+    <div class="features-grid">
+      <div class="feature">
+        <h4>سهولة الاستخدام</h4>
+        <p>واجهة بسيطة وسهلة تتيح لك التصفح والشراء بكل سهولة.</p>
+      </div>
+      <div class="feature">
+        <h4>أمان عالي</h4>
+        <p>حماية قوية للبيانات والمعاملات لضمان تجربة آمنة.</p>
+      </div>
+      <div class="feature">
+        <h4>تنوع المنتجات</h4>
+        <p>آلاف المنتجات المختلفة من كل الفئات في مكان واحد.</p>
+      </div>
+      <div class="feature">
+        <h4>دعم فوري</h4>
+        <p>خدمة عملاء متاحة دائمًا لمساعدتك والإجابة على استفساراتك.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="download">
+    <p>© 2025 سوقكم أونلاين - Sooug. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script>
+    // انيميشن عند التمرير
+    const features = document.querySelectorAll(".feature");
+    window.addEventListener("scroll", () => {
+      features.forEach((f) => {
+        const rect = f.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) {
+          f.style.opacity = "1";
+          f.style.transform = "translateY(0)";
+          f.style.transition = "0.8s";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
