@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- الصفحة الرئيسية -->
+  <url>
+    <loc>https://sooug-c0m.vercel.app/index.html</loc>
+    <lastmod>2025-09-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- صفحة المميزات (داخل index.html) -->
+  <url>
+    <loc>https://sooug-c0m.vercel.app/index.html#features</loc>
+    <lastmod>2025-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- صفحة التحميل (داخل index.html) -->
+  <url>
+    <loc>https://sooug-c0m.vercel.app/index.html#download</loc>
+    <lastmod>2025-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- لو في صفحات تانية HTML ضيفها هنا -->
+  <!-- مثال: -->
+  <!--
+  <url>
+    <loc>https://sooug-c0m.vercel.app/about.html</loc>
+    <lastmod>2025-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  -->
+</urlset>
