@@ -6,6 +6,8 @@
 
 <title>Sooug | Global Digital Marketplace</title>
 
+<meta name="description" content="Sooug سوق رقمي بمعايير عالمية يربط البيع والشراء في منصة واحدة ذكية وآمنة وقابلة للتوسع.">
+
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
@@ -28,14 +30,15 @@
 body{
   background:var(--bg);
   color:var(--text);
+  overflow-x:hidden;
 }
 
-/* ===== Navbar ===== */
+/* ===== Header ===== */
 header{
   position:fixed;
   top:0;
   width:100%;
-  padding:18px 6%;
+  padding:14px 6%;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -44,11 +47,26 @@ header{
   z-index:999;
 }
 
-header h1{
-  font-size:22px;
+/* Logo */
+.logo{
+  display:flex;
+  flex-direction:column;
+  line-height:1;
+}
+
+.logo-en{
+  font-size:20px;
   font-weight:800;
   letter-spacing:1px;
-  color:var(--primary);
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.logo-ar{
+  font-size:11px;
+  color:var(--muted);
+  margin-top:3px;
 }
 
 header nav a{
@@ -127,11 +145,7 @@ header nav a:hover{
   font-weight:700;
 }
 
-/* ===== App Mockup ===== */
-.mockup{
-  position:relative;
-}
-
+/* Mockup */
 .mockup img{
   width:100%;
   max-width:420px;
@@ -250,25 +264,34 @@ footer{
 <body>
 
 <header>
-  <h1>SOOUG</h1>
+  <div class="logo">
+    <span class="logo-en">Sooug</span>
+    <span class="logo-ar">سوقكم أونلاين</span>
+  </div>
+
   <nav>
     <a href="#">Home</a>
-    <a href="#">Features</a>
+    <a href="#">Platform</a>
     <a href="#">Download</a>
   </nav>
 </header>
 
 <section class="hero">
   <div>
-    <h2>سوق رقمي <span>عالمي</span><br> يربط البائع بالمشتري</h2>
+    <h2>
+      سوق رقمي <span>بمعايير عالمية</span><br>
+      يربط البيع والشراء بذكاء
+    </h2>
+
     <p>
-      Sooug منصة تجارة إلكترونية حديثة مصممة لتكون
-      بوابة عالمية للبيع والشراء باحترافية وأمان وتجربة استخدام متقدمة.
+      Sooug هو Marketplace احترافي مصمم للتوسع،
+      يتيح للتجار إدارة منتجاتهم بسهولة،
+      وللمستخدمين الشراء بثقة عبر نظام آمن وتجربة استخدام متقدمة.
     </p>
 
     <div class="actions">
       <a class="btn-main" href="#">تحميل التطبيق</a>
-      <a class="btn-outline" href="#">تعرف أكثر</a>
+      <a class="btn-outline" href="#">استكشاف المنصة</a>
     </div>
   </div>
 
@@ -280,23 +303,23 @@ footer{
 <section class="stats">
   <div class="stat">
     <h3>200+</h3>
-    <p>قسم وفرع</p>
+    <p>أقسام وفرعية</p>
   </div>
   <div class="stat">
     <h3>Global</h3>
-    <p>سوق مفتوح دوليًا</p>
+    <p>قابل للتوسع عالميًا</p>
   </div>
   <div class="stat">
     <h3>Secure</h3>
-    <p>معاملات آمنة</p>
+    <p>نظام آمن بالكامل</p>
   </div>
 </section>
 
 <section class="features">
-  <h3>منصة مصممة للمستقبل</h3>
+  <h3>منصة تجارة مصممة للنمو</h3>
   <p class="desc">
-    كل جزء في Sooug تم تصميمه ليواكب الأسواق العالمية
-    من حيث الأداء، الثقة، وقابلية التوسع.
+    بنية تقنية قوية، تجربة استخدام احترافية،
+    ونظام قابل للتوسع ليخدم الأسواق المحلية والعالمية.
   </p>
 
   <div class="features-grid">
@@ -306,11 +329,11 @@ footer{
     </div>
     <div class="feature">
       <h4>Scalable System</h4>
-      <p>قابل للتوسع مع نمو المستخدمين والتجار.</p>
+      <p>قابل للنمو مع ازدياد عدد المستخدمين والتجار.</p>
     </div>
     <div class="feature">
       <h4>Smart Marketplace</h4>
-      <p>ربط ذكي بين العرض والطلب.</p>
+      <p>ربط ذكي بين العرض والطلب بآليات متقدمة.</p>
     </div>
   </div>
 </section>
@@ -322,7 +345,7 @@ footer{
 </section>
 
 <footer>
-© 2025 SOOUG – Global Marketplace
+© 2025 Sooug – Global Marketplace
 </footer>
 
 </body>
