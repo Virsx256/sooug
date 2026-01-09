@@ -1,280 +1,272 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Meta Tags للسيو -->
-  <title>سوقكم أونلاين - Sooug | سوق مفتوح للتسوق</title>
-  <meta name="description" content="سوقكم أونلاين - Sooug، منصتك المفتوحة للتسوق، بيع وشراء المنتجات بسهولة وأمان. اكتشف آلاف المنتجات مع تجربة سلسة وتصميم عصري." />
-  <meta name="keywords" content="سوقكم اونلاين, Sooug, تسوق, بيع وشراء, سوق مفتوح, تطبيق تسوق, سوقكم, سوق إلكتروني" />
-  <meta name="author" content="سوقكم أونلاين - Sooug" />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="سوقكم أونلاين - Sooug" />
-  <meta property="og:description" content="منصتك المفتوحة للتسوق والبيع والشراء بسهولة وأمان. اكتشف منتجات جديدة أونلاين." />
-  <meta property="og:image" content="https://cdn.dribbble.com/users/32512/screenshots/19617936/media/0ce19da3db2bb6a2b79eac8b0381e9cf.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sooug.com" />
-  <meta name="twitter:card" content="summary_large_image" />
+<title>سوقكم أونلاين | Sooug – Global Marketplace</title>
 
-  <!-- خط عربي عصري -->
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Cairo', sans-serif;
-    }
+<style>
+:root{
+  --main:#0a66ff;
+  --dark:#0f172a;
+  --light:#f8fafc;
+  --gray:#64748b;
+}
 
-    body {
-      background: #f9fbfd;
-      color: #333;
-      overflow-x: hidden;
-    }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Cairo',sans-serif;
+}
 
-    header {
-      width: 100%;
-      padding: 15px 5%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #fff;
-      box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
+body{
+  background:var(--light);
+  color:var(--dark);
+}
 
-    header h1 {
-      color: #007bff;
-      font-weight: 700;
-      font-size: 22px;
-    }
+/* ===== Header ===== */
+header{
+  position:sticky;
+  top:0;
+  z-index:999;
+  background:rgba(255,255,255,.85);
+  backdrop-filter: blur(12px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 6%;
+  box-shadow:0 10px 40px rgba(0,0,0,.06);
+}
 
-    header nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      transition: 0.3s;
-      font-size: 15px;
-    }
+header h1{
+  color:var(--main);
+  font-size:22px;
+  font-weight:800;
+}
 
-    header nav a:hover {
-      color: #007bff;
-    }
+header nav a{
+  margin:0 12px;
+  text-decoration:none;
+  color:var(--dark);
+  font-weight:600;
+  transition:.3s;
+}
 
-    .hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 60px 5%;
-      min-height: 90vh;
-      background: linear-gradient(135deg, #e9f3ff, #ffffff);
-      flex-wrap: wrap;
-      gap: 40px;
-    }
+header nav a:hover{
+  color:var(--main);
+}
 
-    .hero-text {
-      flex: 1;
-      min-width: 280px;
-      animation: fadeInRight 1.5s ease forwards;
-    }
+/* ===== Hero ===== */
+.hero{
+  min-height:100vh;
+  padding:80px 6%;
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:40px;
+  align-items:center;
+  background:
+    radial-gradient(circle at top right,#dbeafe,transparent 60%),
+    linear-gradient(180deg,#ffffff,#f1f5f9);
+}
 
-    .hero-text h2 {
-      font-size: 34px;
-      color: #007bff;
-      margin-bottom: 15px;
-    }
+.hero h2{
+  font-size:42px;
+  line-height:1.3;
+  margin-bottom:20px;
+}
 
-    .hero-text p {
-      font-size: 17px;
-      margin-bottom: 25px;
-      line-height: 1.8;
-      color: #555;
-    }
+.hero h2 span{
+  color:var(--main);
+}
 
-    .btn {
-      background: #007bff;
-      color: #fff;
-      padding: 12px 25px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-      box-shadow: 0 5px 20px rgba(0,123,255,0.3);
-      display: inline-block;
-    }
+.hero p{
+  font-size:18px;
+  color:var(--gray);
+  line-height:1.9;
+  margin-bottom:35px;
+}
 
-    .btn:hover {
-      background: #0056b3;
-      box-shadow: 0 5px 25px rgba(0,123,255,0.5);
-    }
+.hero .btn{
+  display:inline-block;
+  padding:14px 34px;
+  background:linear-gradient(135deg,var(--main),#2563eb);
+  color:#fff;
+  border-radius:50px;
+  font-weight:700;
+  text-decoration:none;
+  box-shadow:0 15px 35px rgba(10,102,255,.35);
+  transition:.3s;
+}
 
-    .hero-img {
-      flex: 1;
-      min-width: 280px;
-      animation: fadeInLeft 1.5s ease forwards;
-      text-align: center;
-    }
+.hero .btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 20px 45px rgba(10,102,255,.45);
+}
 
-    .hero-img img {
-      max-width: 100%;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    }
+.hero-img{
+  position:relative;
+}
 
-    section.features {
-      padding: 60px 5%;
-      text-align: center;
-    }
+.hero-img img{
+  width:100%;
+  max-width:420px;
+  border-radius:28px;
+  box-shadow:0 40px 80px rgba(0,0,0,.25);
+}
 
-    section.features h3 {
-      font-size: 26px;
-      margin-bottom: 40px;
-      color: #007bff;
-    }
+/* ===== Features ===== */
+.features{
+  padding:90px 6%;
+  text-align:center;
+}
 
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 20px;
-    }
+.features h3{
+  font-size:34px;
+  margin-bottom:15px;
+}
 
-    .feature {
-      background: #fff;
-      border-radius: 20px;
-      padding: 25px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
+.features p.sub{
+  color:var(--gray);
+  margin-bottom:50px;
+}
 
-    .feature:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    }
+.features-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
 
-    .feature h4 {
-      color: #007bff;
-      margin-bottom: 12px;
-      font-size: 18px;
-    }
+.feature{
+  background:#fff;
+  padding:35px 25px;
+  border-radius:26px;
+  box-shadow:0 25px 60px rgba(0,0,0,.08);
+  transition:.35s;
+}
 
-    footer {
-      background: #007bff;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      margin-top: 50px;
-      font-size: 14px;
-    }
+.feature:hover{
+  transform:translateY(-12px);
+  box-shadow:0 40px 90px rgba(0,0,0,.12);
+}
 
-    /* Animations */
-    @keyframes fadeInRight {
-      from {
-        opacity: 0;
-        transform: translateX(-40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
+.feature h4{
+  color:var(--main);
+  font-size:20px;
+  margin-bottom:12px;
+}
 
-    @keyframes fadeInLeft {
-      from {
-        opacity: 0;
-        transform: translateX(40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
+.feature p{
+  color:var(--gray);
+  line-height:1.8;
+}
 
-    /* موبايل */
-    @media (max-width: 768px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-      .hero-text h2 {
-        font-size: 28px;
-      }
-      .hero-text p {
-        font-size: 15px;
-      }
-      header nav {
-        display: none; /* ممكن نعمله منيو موبايل لو حابب */
-      }
-    }
-  </style>
+/* ===== CTA ===== */
+.cta{
+  margin:80px 6%;
+  padding:70px 40px;
+  border-radius:40px;
+  background:linear-gradient(135deg,#0a66ff,#1e40af);
+  color:#fff;
+  text-align:center;
+}
+
+.cta h3{
+  font-size:32px;
+  margin-bottom:20px;
+}
+
+.cta a{
+  display:inline-block;
+  margin-top:25px;
+  background:#fff;
+  color:#0a66ff;
+  padding:14px 40px;
+  border-radius:50px;
+  font-weight:800;
+  text-decoration:none;
+}
+
+/* ===== Footer ===== */
+footer{
+  background:#020617;
+  color:#94a3b8;
+  padding:20px;
+  text-align:center;
+  font-size:14px;
+}
+
+/* ===== Mobile ===== */
+@media(max-width:900px){
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+}
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>سوقكم أونلاين</h1>
-    <nav>
-      <a href="#home">الرئيسية</a>
-      <a href="#features">المميزات</a>
-      <a href="#download">تحميل التطبيق</a>
-    </nav>
-  </header>
 
-  <section class="hero" id="home">
-    <div class="hero-text">
-      <h2>مرحبًا بك في <br> سوقكم أونلاين - Sooug</h2>
-      <p>
-        منصتك المفتوحة للتسوق، بيع وشراء كل ما تحتاجه بسهولة وأمان.  
-        اكتشف منتجات جديدة وابدأ تجارتك أونلاين مع تصميم عصري وتجربة سلسة.
-      </p>
-      <a href="https://www.mediafire.com/file/2pv97ojo3xrqjte/سوقكم+أونلاين.apk/file" class="btn">جرّب الآن</a>
+<header>
+  <h1>Sooug</h1>
+  <nav>
+    <a href="#">الرئيسية</a>
+    <a href="#">المميزات</a>
+    <a href="#">التطبيق</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>منصة تسوق <span>عالمية</span><br> من السودان إلى العالم</h2>
+    <p>
+      سوقكم أونلاين هو Marketplace احترافي يربط البائع بالمشتري
+      بتجربة عصرية، أمان عالي، وتصميم يليق بسوق عالمي.
+    </p>
+    <a class="btn" href="#">تحميل التطبيق</a>
+  </div>
+
+  <div class="hero-img">
+    <img src="sooug.png" alt="Sooug App">
+  </div>
+</section>
+
+<section class="features">
+  <h3>لماذا سوقكم أونلاين؟</h3>
+  <p class="sub">منصة مصممة بمعايير عالمية لتجربة بيع وشراء مثالية</p>
+
+  <div class="features-grid">
+    <div class="feature">
+      <h4>واجهة عالمية</h4>
+      <p>تصميم احترافي ينافس كبرى منصات التجارة الإلكترونية.</p>
     </div>
-    <div class="hero-img">
-      <img src="sooug.png" alt="Sooug App">
+    <div class="feature">
+      <h4>ثقة وأمان</h4>
+      <p>حماية بيانات المستخدمين والمعاملات بأعلى المعايير.</p>
     </div>
-  </section>
-
-  <section class="features" id="features">
-    <h3>مميزات سوقكم أونلاين</h3>
-    <div class="features-grid">
-      <div class="feature">
-        <h4>سهولة الاستخدام</h4>
-        <p>واجهة بسيطة وسهلة تتيح لك التصفح والشراء بكل سهولة.</p>
-      </div>
-      <div class="feature">
-        <h4>أمان عالي</h4>
-        <p>حماية قوية للبيانات والمعاملات لضمان تجربة آمنة.</p>
-      </div>
-      <div class="feature">
-        <h4>تنوع المنتجات</h4>
-        <p>آلاف المنتجات المختلفة من كل الفئات في مكان واحد.</p>
-      </div>
-      <div class="feature">
-        <h4>دعم فوري</h4>
-        <p>خدمة عملاء متاحة دائمًا لمساعدتك والإجابة على استفساراتك.</p>
-      </div>
+    <div class="feature">
+      <h4>سوق شامل</h4>
+      <p>منتجات وخدمات متعددة في منصة واحدة.</p>
     </div>
-  </section>
+    <div class="feature">
+      <h4>دعم مستمر</h4>
+      <p>فريق دعم جاهز لمساعدة المستخدمين والبائعين.</p>
+    </div>
+  </div>
+</section>
 
-  <footer id="download">
-    <p>© 2025 سوقكم أونلاين - Sooug. جميع الحقوق محفوظة.</p>
-  </footer>
+<section class="cta">
+  <h3>ابدأ تجارتك الآن مع Sooug</h3>
+  <a href="#">حمّل التطبيق</a>
+</section>
 
-  <script>
-    // انيميشن عند التمرير
-    const features = document.querySelectorAll(".feature");
-    window.addEventListener("scroll", () => {
-      features.forEach((f) => {
-        const rect = f.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 50) {
-          f.style.opacity = "1";
-          f.style.transform = "translateY(0)";
-          f.style.transition = "0.8s";
-        }
-      });
-    });
-  </script>
+<footer>
+© 2025 Sooug – All Rights Reserved
+</footer>
+
 </body>
 </html>
